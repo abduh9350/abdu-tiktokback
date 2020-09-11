@@ -4,7 +4,7 @@ const Data = require("./data.js");
 const Videos = require("./dbModel.js");
 
 const app = express();
-const port = process.enc.PORT || 9000;
+const port = process.env.PORT || 9000;
 
 app.use(express.json());
 app.use((req, res, next) => {
